@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand text-body-emphasis" href="#">Active<span class="text-primary">Sync</span> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item me-5">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link active" href="#">Exercises</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link active" href="#">
+              Pricing
+            </a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link active" href="#">Dashboard</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="home">
+    <div class="home-items">
+      <br>
+      <h1 class="home-heading mb-5 mt-5">Exercise is the key to a <br> <span class="text-primary">Healthy</span>
+        lifestyle</h1>
+      <h5 class="fw-normal">At ActiveSync we are committed at ensuring <br> that all our clients live a healthy happy
+        lifestyle. <br><br><br> We firmly believe that, <span class="text-primary">Better sore Than Sorry</span></h5>
+    </div>
+    <div class="home-items">
+      <img width="100%" src="./img/homeimg.png" alt="">
+    </div>
+  </div>
+  <div class="benfits text-center mt-5 ">
+    <h1 class="mb-5">Benefits of <span class="text-primary">Exercise</span></h1>
+    <h5 class="fw-normal">Reducing blood pressure,Burn excess body fat. Prevent lifestyle disorder diseases.Examples:
+    </h5>
+    <h5 class="fw-normal mt-2"> diabets,obesity,heart diseases,stroke and many more.</h5>
+  </div>
+  <div class="benefits-box">
+    <div class="box-items">
+      <h3 class="text-center mt-3">Improved Physical Health</h3>
+      <p class="text-center mt-4"> Exercise maintains a healthy weight, strengthens muscles and bones, and reduces the risk of chronic diseases like heart disease and diabetes.</p>
+    </div>
+    <div class="box-items">
+      <h3 class="text-center mt-3">Enhanced Mental Well-being</h3>
+      <p class="text-center mt-4">Physical activity releases endorphins, reducing depression and anxiety, boosting self-esteem, and improving cognitive function and sleep.</p>
+    </div>
+    <div class="box-items">
+      <h3 class="text-center mt-3">Longevity and Quality of Life</h3>
+      <p class="text-center mt-4">Regular exercise increases longevity, reduces the risk of chronic conditions, and maintains independence and mobility as we age.</p>
+    </div>
+
+  </div>
+ 
+  <div class="text-center">
+    <h1 class="mb-5 mt-5">Let's Calculate your <span class="text-primary">BMI</span></h1>
+    <h5 class="fw-normal">BMI is a person's weight in kilograms devided by the squre of height in meters.</h5>
+    <h5 class="fw-normal mt-2">A high BMI can indicatr high body fatness, and a low BMI can indiacate too low body
+      fitness.</h5>
+      <img width="40%" src="./img/8551499.jpg" alt="">
+  </div>
+  <div class="bmi-box">
+    <div class="bmi-items text-center">
+      <div class="mt-5 mb-5"><span>Weight</span> : <input type="text" id="weightInput" placeholder="in kg" class="input"> <br><br>
+        <span>Height</span> : <input type="text" id="heightInput" placeholder="in cm" class="input"></div>
+      <button class="btn btn-primary" onclick="calculateBMI()">Calculate</button>
+      <button class="btn btn-primary" onclick="reset()">Reset</button>
+    </div>
+    <div class="bmi-items">
+        <div class="mt-5 d-flex fw-bold fs-5 align-items-center">Your BMI is : <div id="bmiis"></div></div>
+        <h1 class="mt-5" id="needtodo"></h1>
+    </div>
+  </div>
+  <div class="feel">
+    <div class="feel-items">
+      <img class="mt-4" width="100%" src="./img/women.png" alt="">
+    </div>
+    <div class="feel-items">
+      <h1 class="mt-4">'Feel the Burn, Fill the <span class="text-primary">BAM!</span> '</h1>
+      <h5 class="fw-normal mt-5">Our focus is geared to ensuring that more women exercise in an <br> environment where they feel comfortable to do so. <br><br> <br> A daily reminder,Sweat.Smile.Repeat. </h5>
+      <button class="btn btn-primary mt-5">Get Started</button>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-items">
+      <i class="fa-brands fa-facebook"></i>
+    </div>
+    <div class="footer-items">
+      <i class="fa-brands fa-twitter"></i>
+    </div>
+    <div class="footer-items">
+      <i class="fa-brands fa-instagram"></i>
+    </div>
+    <div class="footer-items">
+      <i class="fa-brands fa-whatsapp"></i>
+    </div>
+  </div>
+   <script>
+ const calculateBMI = () => {
+    var weight = document.getElementById('weightInput').value;
+    var height = document.getElementById('heightInput').value / 100;
+
+    if (weight === '' || height === '' || isNaN(weight) || isNaN(height)) {
+        alert("Please enter valid weight and height values.");
+        return; 
+    }
+
+    var bmi = weight / (height * height);
+
+    console.log(bmi);
+
+    if (bmi < 18.5) {
+        document.getElementById('bmiis').innerHTML = `${bmi.toFixed(2)}`
+        document.getElementById('needtodo').innerHTML = "Eat Something!!!"
+    } else if (bmi >= 18.5 && bmi <= 24.9) {
+        document.getElementById('bmiis').innerHTML = `${bmi.toFixed(2)}`
+        document.getElementById('needtodo').innerHTML = "Mhhm You are okay.."
+    } else if (bmi >= 25 && bmi <= 29.9) {
+        document.getElementById('bmiis').innerHTML = `${bmi.toFixed(2)}`
+        document.getElementById('needtodo').innerHTML = "You should Exercise.or else....."
+    } else if (bmi > 30) {
+        document.getElementById('bmiis').innerHTML = `${bmi.toFixed(2)}`
+        document.getElementById('needtodo').innerHTML = "You are going to die..."
+    }
+}
+const reset =()=>{
+  document.getElementById('weightInput').value = ""
+  document.getElementById('heightInput').value = ""
+  document.getElementById('bmiis').innerHTML = ""
+  document.getElementById('needtodo').innerHTML = ""
+
+}
+
+
+  </script>
+  
+  </body>
+  </html>
